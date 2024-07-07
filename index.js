@@ -1,7 +1,7 @@
 
 const { createServer } = require('http')
 
-const port = 3000
+const port = process.env.PORT || 3000
 const server = createServer(handleRequest)
 
 server.listen(port, () => {
